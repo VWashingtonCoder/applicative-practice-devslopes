@@ -6,6 +6,9 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
+  const { planets } = data;
+  const planetEarth = planets.filter(planet => planet.name === 'Earth');
+  return planetEarth[0];
 }
 
 
